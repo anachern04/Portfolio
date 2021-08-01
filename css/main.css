@@ -1,0 +1,581 @@
+/* ------ Подключение шрифтов ------ */
+
+@font-face {
+  font-family: 'Museo Sans 100';
+  src: url('../fonts/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('../fonts/MuseoSansCyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* ------ Спецификация ------ */
+
+body {
+	font-family: 'Museo Sans 300', sans-serif;
+	font-size: 15px;
+	color: #272921;
+	padding: 0;
+	letter-spacing: 0.12em;
+	margin: 0;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 15px;
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Natasha';
+	letter-spacing: 0.12em;
+}
+
+h1 {
+	font-size: 49px;
+}
+
+h2 {
+	font-size: 37px;
+}
+
+h3 {
+	font-size: 22px;
+	color: #878785;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/* ------ Первый экран ------ */
+
+.header {
+	background: #373b34 url(../img/forest.jpg) no-repeat center top / cover;
+	padding-top: 52px;
+	padding-bottom: 82px;
+	color: #fff;
+}
+
+.header a {
+	color: #fff;
+}
+
+.navigation__logo {
+	font-family: 'Museo Sans 100';
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.navigation__logo span {
+	font-family: 'Museo Sans 900';
+}
+
+.navigation__menu {
+	font-family: 'Museo Sans 900';
+}
+
+.navigation__item {
+	margin-right: 40px;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+.navigation__item:hover {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 4px;
+}
+
+.navigation__mail {
+	font-size: 13px;
+	border-bottom: 1px #fff solid;
+}
+
+.offer {
+	text-align: center;
+}
+
+.offer__title {
+	margin-top: 284px;
+	margin-bottom: 10px;
+}
+
+.offer__text {
+	font-family: 'Museo Sans 100';
+	font-size: 29px;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
+
+.offer__arrow {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	border: 1px #fff solid;
+	border-radius: 50%;
+	margin-top: 250px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	padding: 9px 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.offer__arrow:hover {
+	background: #fff;
+	color: #373b34;
+}
+
+/* ------ Обо мне ------ */
+
+.about-me {
+	padding-top: 76px;
+	padding-bottom: 50px;
+}
+
+.about-me__content {
+	margin-top: 67px;
+}
+
+.back {
+	width: 440px;
+}
+
+.back__title {
+	margin-bottom: 34px;
+}
+
+.back__text {
+	margin-bottom: 30px;
+}
+
+.back__text:last-chirld {
+	margin-top: 30px;
+}
+
+.info {
+	width: 464px;
+}
+
+.merit {
+	margin-bottom: 60px;
+}
+
+.merit__stat {
+	margin-top: 60px;
+	justify-content: center;
+}
+
+.merit__item {
+	margin-right: 46px;
+
+}
+
+.merit__icon {
+	width: 72px;
+	height: 72px;
+	border: 1px solid #4f653d;
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	margin: 0 auto 40px;
+}
+
+.merit__square {
+	width: 62px;
+	height: 62px;
+	border: 1px solid #d0dac3;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.merit__number {
+	max-width: 40px;
+	font-family: 'Museo Sans 100';
+	font-size: 20px;
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.merit__text {
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: 'Museo Sans 100';
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	max-width: 112px;
+}
+
+.connect__back {
+	margin-top: 26px;
+}
+
+.connect__links {
+	font-size: 14px;
+	line-height: 2em;
+	width: 178px;
+}
+
+.connect__links a {
+	color: #204d15;
+	display: inline-block;
+	border-bottom: 1px solid #204d15;
+	margin-bottom: 6px;
+}
+
+.connect__icon {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #eff1ee;
+	margin-right: 16px;
+	justify-content: center;
+	align-content: center;
+}
+
+.connect__icon span {
+	font-size: 25px;
+}
+
+.connect__text {
+	font-size: 14px;
+	color: #878785;
+	letter-spacing: 0.02em;
+	font-style: italic;
+}
+
+/* ------ Навыки ------ */
+
+.attain {
+	padding-bottom: 76px;
+}
+
+.skills {
+	margin-top: 56px;
+}
+
+.skills__item_short {
+	margin-right: 33px;
+}
+
+.skills__item_longer1 {
+	margin-right: 90px;
+}
+
+.skills__item_longer2 {
+	margin-right: 101px;
+}
+
+.skills__icon {
+	width: 61px;
+	height: 61px;
+	border: 1px solid #204d15;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	margin-right: 26px;
+	color: #204d15;
+	font-family: 'Museo Sans 100';
+}
+
+.skills__circle {
+	width: 49.43px;
+	height: 49.43px;
+	border: 1px solid #b2b6b1;
+	border-radius: 50%;
+	justify-content: center;
+	font-size: 13px;
+}
+
+.skills__text {
+	font-family: 'Museo Sans 900';
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+/* ------ Работы ------ */
+
+.work__foto {
+	margin-top: 55px;
+}
+
+.work__wrap {
+	position: relative;
+}
+
+.work__wrap img {
+	display: block;
+}
+
+.work__wrap:hover .work__overlay {
+	opacity: 1;
+}
+
+.work__overlay {
+	background: rgba(0,0,0,0.56);
+	color: #fff;
+	font-family: 'Museo Sans 900';
+	font-size: 15px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.work__overlay h3 {
+	font-size: 15px;
+	color: #fff;
+}
+
+.work__overlay a {
+	color: #fff;
+	text-decoration: underline;
+	font-family: 'Museo Sans 300';
+	font-size: 13px;
+	text-transform: none;
+	margin-top: 8px;
+}
+
+/* ------ Футер ------ */
+
+.footer {
+	padding-top: 120px;
+	padding-bottom: 112px;
+	font-size: 11px;
+	letter-spacing: 0.14em;
+	color: #22241b;
+	text-transform: uppercase;
+}
+
+.footer__year:after {
+	content:'/';
+	margin-right: 5px;
+}
+
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+	.offer__title {
+		line-height: 1.2em;
+	}
+	.back {
+		width: 45%;
+	}
+	.info {
+		width: 45%;
+	}
+	.merit__item {
+		margin-right: 15px;
+	}
+	.connect__back {
+		flex-direction: column;
+	}
+	.connect__links,.connect__invite {
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.connect__invite {
+		margin-top: 10px;
+	}
+	.skills__item {
+		margin-right: 20px;
+	}
+	.skills__icon {
+		margin-right: 10px;
+	}
+	.work__wrap {
+		width: 30%;
+	}
+	.work__wrap img {
+		width: 100%;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+	}
+	.navigation__menu {
+		display: none;
+	}
+	.about-me__content {
+		flex-direction: column;
+	}
+	.back {
+		width: 100%;
+	}
+	.info {
+		width: 100%;
+		margin-top: 40px;
+	}
+	.skills {
+		flex-wrap: wrap;
+	}
+	.skills__item {
+		margin-bottom: 10px;
+		margin-right: 40px;
+	}
+	.skills__item_longer3 {
+		margin-left: 72px;
+	}
+	.work__foto {
+		flex-wrap: wrap;
+	}
+	.work__wrap {
+		width: 45%;
+		margin-bottom: 40px;
+	}
+	.footer {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.merit__stat {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.merit__item {
+		margin-bottom: 10px;
+	}
+	.connect__back {
+		flex-direction: column;
+	}
+	.connect__links,.connect__invite {
+		margin-left: 0;
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+	.skills__item_longer3 {
+		margin-left: 0;
+	}
+	.work__foto {
+		flex-direction: column;
+	}
+	.work__wrap {
+		width: 80%;
+		max-width: 300px;
+		margin-bottom: 40px;
+	}
+}
